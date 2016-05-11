@@ -1,3 +1,10 @@
+'''
+runPartial v1.0
+---------------
+runs the kNearestNeighbors algorithm
+on a partial dataset (where dataPoints might be missing or have yet to be obtained)
+'''
+
 from loadData import *
 from fullClassify import *
 # testing()

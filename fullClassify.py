@@ -1,3 +1,10 @@
+'''
+fullClassify.py
+----------------
+Program runs the logistic algorithm in order to provide weights
+that will be used to weight the distances in the kNearestNeighbors
+when testing
+'''
 from loadData import *
 
 import collections 
@@ -96,12 +103,10 @@ class LogisticAlg(object):
 
 			for i in range(len(beta)):
 				beta[i] += learningRate * gradient[i]
-		print beta
-		print "total Count is: " + str(totalCount)
-		print "update Count is: " + str(updateCount)
+		# print beta
+		# print "total Count is: " + str(totalCount)
+		# print "update Count is: " + str(updateCount)
 		return beta
-	# def returnTrainData(self):
-	# 	print trainData
 
 	def calcLogValue(self, dataPoint, beta):
 		z = float (beta[0])
@@ -112,7 +117,7 @@ class LogisticAlg(object):
 		# print 1/(1+ math.e**(-z))
 		return 1/(1+ math.e**(-z))
 
-
+#computes the distance for the kNearest Neighbors 
 def computeDistance(dataPoint, trainPoint, indicatorVect):
 	distance = 0
 	for i in range(len(dataPoint)-1):
@@ -167,7 +172,6 @@ def findKNearestNeighbors(dataPoint, trainData, numNeighbors, indicatorVect):
 		
 		elif distance < currentMax and i >= numNeighbors:
 			x = neighborValues.pop().kvalue
-			# print x
 			y = classValuesDict[x]
 			neighborsClassDict[y] -= 1 
 			del classValuesDict[x]
@@ -185,9 +189,6 @@ def findKNearestNeighbors(dataPoint, trainData, numNeighbors, indicatorVect):
 			neighborValues.append(tempPoint)
 			neighborValues = sorted(neighborValues, key = lambda distancePoint: distancePoint.cdistance)
 			currentMax = neighborValues[len(neighborValues)-1].cdistance
-		# print neighborValues 
-		# print ''
-		# print ''
 	return neighborsClassDict, classValuesDict, neighborValues
 
 

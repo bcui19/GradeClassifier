@@ -1,3 +1,11 @@
+'''
+loadData.py
+------------
+From a .csv file loads and parses the data
+from a CSV file into python to be made useful for training and testing 
+'''
+
+
 import os
 import random
 import copy
@@ -162,7 +170,7 @@ def reloadData():
 
 
 
-reloadData()
+# reloadData()
 
 
 
