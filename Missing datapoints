@@ -1,0 +1,94 @@
+Everything ran from 100 trials 
+	7 point cross validation (test, train split 30: 70)
+	reloaded every time 
+
+epochNum = 100, LearningRate = 0.0001, 50 trials
+Weight vector determined through logistic regression:
+	indicatorVect = [0.7447307032278263, 1.3489390260787242, 0.6531047116281652, -0.23729433747436118, 2.072412632390921, -1.1380316617371093, 1.2698546091002005, 2.449161524807238, 2.786748646183948]
+
+Missing the final:
+	The average probability is: 0.620127284418
+
+Missing the final and last assignment:
+	The average probability is: 0.65546398997
+
+Missing the final and last 2 assignments:
+	The average probability is: 0.657499710313
+
+Missing the final, midterm, and last 2 assignments:
+	The average probability is: 0.579763742603
+
+
+epochNum = 100, LearningRate = 0.0001, 10 trials (averaged)
+indicatorVect = [0.0015993839068165893, 0.04149944907556928, 0.036344272299874684, 0.03395986469618202, 0.040320083007147615, 0.0345379860836552, 0.041045702183377705, 0.0381037688868122, 0.03762286078983675]
+
+Missing the final:
+	The average probability is: 0.701403482495
+
+Missing the final and last assignment:
+	The average probability is: 0.684315055496
+
+Missing the final and last 2 assignments:
+	The average probability is: 0.703830171727
+
+Missing the final, midterm, and last 2 assignments:
+	The average probability is: 0.633824731991
+
+epochNum = 5000, LearningRate = 0.0001, 1 trial
+indicatorVect = [0.0939528120847046, -0.046414952491629885, 0.12824465449052783, 0.028460599518464608, 0.009908722200549105, 0.08255541595870276, 0.05767178666220899, 0.23050453742284227, 0.09487946861860368]
+
+Missing the final:
+	The average probability is: 0.684664841628
+
+Missing the final and last assignment:
+	The average probability is: 0.672626062025
+
+Missing the final and last two assignments:
+	The average probability is: 0.665538174886
+
+Missing the final, midterm and last 2 assignments:
+	The average probability is: 0.594845513095
+
+
+epochNum = 1000, LearningRate = 0.0005, 10 trials
+indicatorVect = [0.7219874620771283, 0.007671177646828661, -0.00782339588112304, -0.2323266357141165, 0.6961589707088305, -1.0992717780204389, 0.03264090835078458, 0.945821670987636, 1.0862041562480547]
+
+Missing the final:
+	The average probability is: 0.611298127309
+
+Missing the final and last and last assignment:
+	The average probability is: 0.570780106404
+
+Missing the final and last 2 assignments:
+	The average probability is: 0.570114625929
+
+Missing the final, midterm and last 2 assignments:
+	The average probability is: 0.612987558282
+
+
+epochNum = 1000 LearningRange = 0.00005, 10 trials
+indicatorVect[0.07624999981754536, 0.4609230444869674, 0.41210744188031684, 0.2737352723995422, 0.566344024347642, 0.1967150737993122, 0.39516353502779655, 0.5298984496717364, 0.6482926909045612]
+
+Missing the final:
+	The average probability is: 0.681074456919
+
+Missing the final and last assignment
+	The average probability is: 0.683550685872
+
+Missing the final and last two assignments:
+	The average probability is: 0.686113154231
+
+Missing the final, midterm and last 2 assignments:
+	The average probability is: 0.622492726078
+	
+
+
+
+
+
+
+
+
+
+
+
